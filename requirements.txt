@@ -7,3 +7,7 @@ scipy
 scikit-learn
 jupyterlab
 plotly
+streamlit
+pingouin
+statsmodels
+scipy
