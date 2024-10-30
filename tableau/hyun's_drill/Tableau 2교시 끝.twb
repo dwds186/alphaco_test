@@ -1,0 +1,2089 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Tableau1_17302528994340' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='서울시 표준주택가격(물리적)(표준주택가격(2021년~2022년))' inline='true' name='federated.13aqdt909rizve13i1y0j0t7ahwt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='표준주택가격(2021년~2022년)' name='excel-direct.18o9d6708j5vc41eu4xq00wa71b4'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/campus3S013/Downloads/표준주택가격(2021년~2022년).xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='서울시 표준주택가격(논리적)' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='시도' />
+            <column datatype='string' name='시군구' />
+            <column datatype='string' name='일련번호' />
+            <column datatype='string' name='소재지' />
+            <column datatype='string' name='도로명주소' />
+            <column datatype='string' name='지목' />
+            <column datatype='string' name='건물용도' />
+            <column datatype='real' name='대지면적' />
+            <column datatype='real' name='연면적' />
+            <column datatype='real' name='건축면적' />
+            <column datatype='integer' name='동수' />
+            <column datatype='string' name='2021층수(지상/지하)' />
+            <column datatype='string' name='용도지역' />
+            <column datatype='string' name='용도지구' />
+            <column datatype='string' name='도로교통' />
+            <column datatype='string' name='형상지세' />
+            <column datatype='string' name='주건물구조' />
+            <column datatype='integer' name='사용승인일' />
+            <column datatype='string' name='주위환경' />
+            <column datatype='integer' name='주택공시가격' />
+            <column datatype='string' name='2022층수(지상/지하)' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.18o9d6708j5vc41eu4xq00wa71b4' name='서울시_표준주택가격_2021년' table='[서울시_표준주택가격_2021년$]' type='table'>
+            <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+              <column datatype='string' name='시도' ordinal='0' />
+              <column datatype='string' name='시군구' ordinal='1' />
+              <column datatype='integer' name='일련번호' ordinal='2' />
+              <column datatype='string' name='소재지' ordinal='3' />
+              <column datatype='string' name='도로명주소' ordinal='4' />
+              <column datatype='string' name='지목' ordinal='5' />
+              <column datatype='string' name='건물용도' ordinal='6' />
+              <column datatype='real' name='대지면적' ordinal='7' />
+              <column datatype='real' name='연면적' ordinal='8' />
+              <column datatype='real' name='건축면적' ordinal='9' />
+              <column datatype='integer' name='동수' ordinal='10' />
+              <column datatype='string' name='2021층수(지상/지하)' ordinal='11' />
+              <column datatype='string' name='용도지역' ordinal='12' />
+              <column datatype='string' name='용도지구' ordinal='13' />
+              <column datatype='string' name='도로교통' ordinal='14' />
+              <column datatype='string' name='형상지세' ordinal='15' />
+              <column datatype='string' name='주건물구조' ordinal='16' />
+              <column datatype='integer' name='사용승인일' ordinal='17' />
+              <column datatype='string' name='주위환경' ordinal='18' />
+              <column datatype='integer' name='주택공시가격' ordinal='19' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18o9d6708j5vc41eu4xq00wa71b4' name='서울시_표준주택가격_2022년' table='[서울시_표준주택가격_2022년$]' type='table'>
+            <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+              <column datatype='string' name='시도' ordinal='0' />
+              <column datatype='string' name='시군구' ordinal='1' />
+              <column datatype='integer' name='일련번호' ordinal='2' />
+              <column datatype='string' name='소재지' ordinal='3' />
+              <column datatype='string' name='도로명주소' ordinal='4' />
+              <column datatype='string' name='지목' ordinal='5' />
+              <column datatype='string' name='건물용도' ordinal='6' />
+              <column datatype='real' name='대지면적' ordinal='7' />
+              <column datatype='real' name='연면적' ordinal='8' />
+              <column datatype='real' name='건축면적' ordinal='9' />
+              <column datatype='integer' name='동수' ordinal='10' />
+              <column datatype='string' name='2022층수(지상/지하)' ordinal='11' />
+              <column datatype='string' name='용도지역' ordinal='12' />
+              <column datatype='string' name='용도지구' ordinal='13' />
+              <column datatype='string' name='도로교통' ordinal='14' />
+              <column datatype='string' name='형상지세' ordinal='15' />
+              <column datatype='string' name='주건물구조' ordinal='16' />
+              <column datatype='integer' name='사용승인일' ordinal='17' />
+              <column datatype='string' name='주위환경' ordinal='18' />
+              <column datatype='integer' name='주택공시가격' ordinal='19' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>시도</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[시도]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>시도</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>시군구</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[시군구]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>시군구</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>일련번호</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[일련번호]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>일련번호</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>소재지</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[소재지]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>소재지</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>도로명주소</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[도로명주소]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>도로명주소</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지목</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[지목]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>지목</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>건물용도</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[건물용도]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>건물용도</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>대지면적</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[대지면적]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>대지면적</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연면적</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[연면적]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>연면적</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>건축면적</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[건축면적]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>건축면적</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>동수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[동수]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>동수</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021층수(지상/지하)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[2021층수(지상/지하)]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>2021층수(지상/지하)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>용도지역</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[용도지역]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>용도지역</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>용도지구</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[용도지구]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>용도지구</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>도로교통</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[도로교통]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>도로교통</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>형상지세</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[형상지세]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>형상지세</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주건물구조</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[주건물구조]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>주건물구조</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>사용승인일</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[사용승인일]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>사용승인일</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주위환경</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[주위환경]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>주위환경</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주택공시가격</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[주택공시가격]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>주택공시가격</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2022층수(지상/지하)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[2022층수(지상/지하)]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>2022층수(지상/지하)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[서울시 표준주택가격(논리적)]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='년도' datatype='string' name='[Calculation_1364309221110484992]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF[Table Name] = &quot;서울시_표준주택가격_2021년&quot; THEN &quot;2021년&quot;&#13;&#10;ELSEIF[Table Name] = &quot;서울시_표준주택가격_2022년&quot; THEN &quot;2022년&quot;&#13;&#10;END' />
+      </column>
+      <column caption='층수_지상' datatype='integer' name='[Calculation_1364309221111414787]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT(IF [Calculation_1364309221110484992] = &apos;2021년&apos; THEN MID(SPLIT([2021층수(지상/지하)],&apos;/&apos;,1),2)&#13;&#10;ELSEIF [Calculation_1364309221110484992] = &apos;2022년&apos; THEN MID(SPLIT([2022층수(지상/지하)],&apos;/&apos;,1),2)&#13;&#10;END)' />
+      </column>
+      <column caption='층수_지하' datatype='integer' name='[Calculation_1364309221112000516]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT(IF [Calculation_1364309221110484992] = &apos;2021년&apos; THEN MID(SPLIT([2021층수(지상/지하)],&apos;/&apos;,2),1,1)&#13;&#10;ELSEIF [Calculation_1364309221110484992] = &apos;2022년&apos; THEN MID(SPLIT([2022층수(지상/지하)],&apos;/&apos;,2),1,1)&#13;&#10;END)' />
+      </column>
+      <column caption='한층당 면적' datatype='real' name='[Calculation_1364309221112500229]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([연면적]) / SUM([Calculation_1364309221111414787] + [Calculation_1364309221112000516])' />
+      </column>
+      <column caption='용적률' datatype='real' name='[Calculation_1364309221112950790]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([Calculation_1364309221112500229]*SUM([Calculation_1364309221111414787])) / SUM([대지면적]) * 100' />
+      </column>
+      <column caption='건폐율' datatype='real' name='[Calculation_1364309221113380871]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([건축면적]) / SUM([대지면적])) * 100' />
+      </column>
+      <column caption='총건물수' datatype='integer' name='[Calculation_1364309221119533064]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([도로명주소])' />
+      </column>
+      <column caption='평균주택공시가격' datatype='real' name='[Calculation_1364309221119799305]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([주택공시가격])' />
+      </column>
+      <column datatype='string' hidden='true' name='[Sheet]' role='dimension' type='nominal' />
+      <column caption='서울시 표준주택가격(물리적)' datatype='table' name='[__tableau_internal_object_id__].[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]' role='measure' type='quantitative' />
+      <column datatype='real' name='[건축면적]' role='measure' type='quantitative' />
+      <column datatype='real' name='[대지면적]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[동수]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[사용승인일]' role='measure' type='quantitative' />
+      <column datatype='string' name='[시군구]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[시도]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='real' name='[연면적]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[주택공시가격]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:_AF5019C9F6B44D4B9B0DAE2BC7AD0523:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1364309221111414787]' derivation='Sum' name='[sum:Calculation_1364309221111414787:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1364309221112000516]' derivation='Sum' name='[sum:Calculation_1364309221112000516:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[건축면적]' derivation='Sum' name='[sum:건축면적:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[대지면적]' derivation='Sum' name='[sum:대지면적:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[동수]' derivation='Sum' name='[sum:동수:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[사용승인일]' derivation='Sum' name='[sum:사용승인일:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[연면적]' derivation='Sum' name='[sum:연면적:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[주택공시가격]' derivation='Sum' name='[sum:주택공시가격:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1364309221112500229]' derivation='User' name='[usr:Calculation_1364309221112500229:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1364309221112950790]' derivation='User' name='[usr:Calculation_1364309221112950790:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1364309221113380871]' derivation='User' name='[usr:Calculation_1364309221113380871:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1364309221119533064]' derivation='User' name='[usr:Calculation_1364309221119533064:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1364309221119799305]' derivation='User' name='[usr:Calculation_1364309221119799305:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='시도, 시군구'>
+          <field>[시도]</field>
+          <field>[시군구]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/CAMPUS~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1o69zr30vpm0en1933gpm0vkb4ls.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/30/2024 01:16:34 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>시도</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[시도]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>시도</remote-alias>
+              <ordinal>0</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>시군구</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[시군구]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>시군구</remote-alias>
+              <ordinal>1</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>일련번호</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[일련번호]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>일련번호</remote-alias>
+              <ordinal>2</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3412</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>소재지</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[소재지]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>소재지</remote-alias>
+              <ordinal>3</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27517</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>도로명주소</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[도로명주소]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>도로명주소</remote-alias>
+              <ordinal>4</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27517</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>지목</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[지목]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>지목</remote-alias>
+              <ordinal>5</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>건물용도</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[건물용도]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>건물용도</remote-alias>
+              <ordinal>6</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>대지면적</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[대지면적]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>대지면적</remote-alias>
+              <ordinal>7</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3351</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>연면적</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[연면적]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>연면적</remote-alias>
+              <ordinal>8</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13049</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>건축면적</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[건축면적]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>건축면적</remote-alias>
+              <ordinal>9</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9289</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>동수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[동수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>동수</remote-alias>
+              <ordinal>10</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021층수(지상/지하)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[2021층수(지상/지하)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021층수(지상/지하)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>용도지역</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[용도지역]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>용도지역</remote-alias>
+              <ordinal>12</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>용도지구</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[용도지구]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>용도지구</remote-alias>
+              <ordinal>13</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>도로교통</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[도로교통]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>도로교통</remote-alias>
+              <ordinal>14</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>형상지세</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[형상지세]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>형상지세</remote-alias>
+              <ordinal>15</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>주건물구조</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[주건물구조]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>주건물구조</remote-alias>
+              <ordinal>16</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>사용승인일</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[사용승인일]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>사용승인일</remote-alias>
+              <ordinal>17</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>144</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>주위환경</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[주위환경]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>주위환경</remote-alias>
+              <ordinal>18</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>주택공시가격</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[주택공시가격]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>주택공시가격</remote-alias>
+              <ordinal>19</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3049</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2022층수(지상/지하)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[2022층수(지상/지하)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2022층수(지상/지하)</remote-alias>
+              <ordinal>20</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>21</ordinal>
+              <family>서울시 표준주택가격(논리적)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[_AF5019C9F6B44D4B9B0DAE2BC7AD0523]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[sum:주택공시가격:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221112950790:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[sum:동수:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119799305:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119533064:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[sum:사용승인일:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[sum:건축면적:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[__tableau_internal_object_id__].[cnt:_AF5019C9F6B44D4B9B0DAE2BC7AD0523:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221112500229:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[sum:Calculation_1364309221111414787:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[sum:연면적:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221113380871:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[sum:Calculation_1364309221112000516:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[sum:대지면적:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='시도' />
+        <field-sort-custom-order field='시군구' />
+        <field-sort-custom-order field='일련번호' />
+        <field-sort-custom-order field='소재지' />
+        <field-sort-custom-order field='도로명주소' />
+        <field-sort-custom-order field='지목' />
+        <field-sort-custom-order field='건물용도' />
+        <field-sort-custom-order field='대지면적' />
+        <field-sort-custom-order field='연면적' />
+        <field-sort-custom-order field='Calculation_1364309221112500229' />
+        <field-sort-custom-order field='Calculation_1364309221112950790' />
+        <field-sort-custom-order field='건축면적' />
+        <field-sort-custom-order field='Calculation_1364309221113380871' />
+        <field-sort-custom-order field='동수' />
+        <field-sort-custom-order field='2021층수(지상/지하)' />
+        <field-sort-custom-order field='Calculation_1364309221112000516' />
+        <field-sort-custom-order field='Calculation_1364309221111414787' />
+        <field-sort-custom-order field='용도지역' />
+        <field-sort-custom-order field='용도지구' />
+        <field-sort-custom-order field='도로교통' />
+        <field-sort-custom-order field='형상지세' />
+        <field-sort-custom-order field='주건물구조' />
+        <field-sort-custom-order field='사용승인일' />
+        <field-sort-custom-order field='주위환경' />
+        <field-sort-custom-order field='주택공시가격' />
+        <field-sort-custom-order field='2022층수(지상/지하)' />
+        <field-sort-custom-order field='Sheet' />
+        <field-sort-custom-order field='Table Name' />
+        <field-sort-custom-order field='Calculation_1364309221110484992' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='서울시 표준주택가격(물리적)' id='_AF5019C9F6B44D4B9B0DAE2BC7AD0523'>
+            <properties context=''>
+              <relation all='true' name='서울시 표준주택가격(논리적)' type='union'>
+                <columns header='yes'>
+                  <column datatype='string' name='시도' />
+                  <column datatype='string' name='시군구' />
+                  <column datatype='string' name='일련번호' />
+                  <column datatype='string' name='소재지' />
+                  <column datatype='string' name='도로명주소' />
+                  <column datatype='string' name='지목' />
+                  <column datatype='string' name='건물용도' />
+                  <column datatype='real' name='대지면적' />
+                  <column datatype='real' name='연면적' />
+                  <column datatype='real' name='건축면적' />
+                  <column datatype='integer' name='동수' />
+                  <column datatype='string' name='2021층수(지상/지하)' />
+                  <column datatype='string' name='용도지역' />
+                  <column datatype='string' name='용도지구' />
+                  <column datatype='string' name='도로교통' />
+                  <column datatype='string' name='형상지세' />
+                  <column datatype='string' name='주건물구조' />
+                  <column datatype='integer' name='사용승인일' />
+                  <column datatype='string' name='주위환경' />
+                  <column datatype='integer' name='주택공시가격' />
+                  <column datatype='string' name='2022층수(지상/지하)' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.18o9d6708j5vc41eu4xq00wa71b4' name='서울시_표준주택가격_2021년' table='[서울시_표준주택가격_2021년$]' type='table'>
+                  <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+                    <column datatype='string' name='시도' ordinal='0' />
+                    <column datatype='string' name='시군구' ordinal='1' />
+                    <column datatype='integer' name='일련번호' ordinal='2' />
+                    <column datatype='string' name='소재지' ordinal='3' />
+                    <column datatype='string' name='도로명주소' ordinal='4' />
+                    <column datatype='string' name='지목' ordinal='5' />
+                    <column datatype='string' name='건물용도' ordinal='6' />
+                    <column datatype='real' name='대지면적' ordinal='7' />
+                    <column datatype='real' name='연면적' ordinal='8' />
+                    <column datatype='real' name='건축면적' ordinal='9' />
+                    <column datatype='integer' name='동수' ordinal='10' />
+                    <column datatype='string' name='2021층수(지상/지하)' ordinal='11' />
+                    <column datatype='string' name='용도지역' ordinal='12' />
+                    <column datatype='string' name='용도지구' ordinal='13' />
+                    <column datatype='string' name='도로교통' ordinal='14' />
+                    <column datatype='string' name='형상지세' ordinal='15' />
+                    <column datatype='string' name='주건물구조' ordinal='16' />
+                    <column datatype='integer' name='사용승인일' ordinal='17' />
+                    <column datatype='string' name='주위환경' ordinal='18' />
+                    <column datatype='integer' name='주택공시가격' ordinal='19' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.18o9d6708j5vc41eu4xq00wa71b4' name='서울시_표준주택가격_2022년' table='[서울시_표준주택가격_2022년$]' type='table'>
+                  <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+                    <column datatype='string' name='시도' ordinal='0' />
+                    <column datatype='string' name='시군구' ordinal='1' />
+                    <column datatype='integer' name='일련번호' ordinal='2' />
+                    <column datatype='string' name='소재지' ordinal='3' />
+                    <column datatype='string' name='도로명주소' ordinal='4' />
+                    <column datatype='string' name='지목' ordinal='5' />
+                    <column datatype='string' name='건물용도' ordinal='6' />
+                    <column datatype='real' name='대지면적' ordinal='7' />
+                    <column datatype='real' name='연면적' ordinal='8' />
+                    <column datatype='real' name='건축면적' ordinal='9' />
+                    <column datatype='integer' name='동수' ordinal='10' />
+                    <column datatype='string' name='2022층수(지상/지하)' ordinal='11' />
+                    <column datatype='string' name='용도지역' ordinal='12' />
+                    <column datatype='string' name='용도지구' ordinal='13' />
+                    <column datatype='string' name='도로교통' ordinal='14' />
+                    <column datatype='string' name='형상지세' ordinal='15' />
+                    <column datatype='string' name='주건물구조' ordinal='16' />
+                    <column datatype='integer' name='사용승인일' ordinal='17' />
+                    <column datatype='string' name='주위환경' ordinal='18' />
+                    <column datatype='integer' name='주택공시가격' ordinal='19' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='라인차트 그래프'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='서울시 표준주택가격(물리적)(표준주택가격(2021년~2022년))' name='federated.13aqdt909rizve13i1y0j0t7ahwt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13aqdt909rizve13i1y0j0t7ahwt'>
+            <column datatype='string' name='[2021층수(지상/지하)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[2022층수(지상/지하)]' role='dimension' type='nominal' />
+            <column caption='년도' datatype='string' name='[Calculation_1364309221110484992]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF[Table Name] = &quot;서울시_표준주택가격_2021년&quot; THEN &quot;2021년&quot;&#13;&#10;ELSEIF[Table Name] = &quot;서울시_표준주택가격_2022년&quot; THEN &quot;2022년&quot;&#13;&#10;END' />
+            </column>
+            <column caption='층수_지상' datatype='integer' name='[Calculation_1364309221111414787]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(IF [Calculation_1364309221110484992] = &apos;2021년&apos; THEN MID(SPLIT([2021층수(지상/지하)],&apos;/&apos;,1),2)&#13;&#10;ELSEIF [Calculation_1364309221110484992] = &apos;2022년&apos; THEN MID(SPLIT([2022층수(지상/지하)],&apos;/&apos;,1),2)&#13;&#10;END)' />
+            </column>
+            <column caption='층수_지하' datatype='integer' name='[Calculation_1364309221112000516]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(IF [Calculation_1364309221110484992] = &apos;2021년&apos; THEN MID(SPLIT([2021층수(지상/지하)],&apos;/&apos;,2),1,1)&#13;&#10;ELSEIF [Calculation_1364309221110484992] = &apos;2022년&apos; THEN MID(SPLIT([2022층수(지상/지하)],&apos;/&apos;,2),1,1)&#13;&#10;END)' />
+            </column>
+            <column caption='한층당 면적' datatype='real' name='[Calculation_1364309221112500229]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([연면적]) / SUM([Calculation_1364309221111414787] + [Calculation_1364309221112000516])' />
+            </column>
+            <column caption='용적률' datatype='real' name='[Calculation_1364309221112950790]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([Calculation_1364309221112500229]*SUM([Calculation_1364309221111414787])) / SUM([대지면적]) * 100' />
+            </column>
+            <column caption='건폐율' datatype='real' name='[Calculation_1364309221113380871]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([건축면적]) / SUM([대지면적])) * 100' />
+            </column>
+            <column datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+            <column-instance column='[시군구]' derivation='None' name='[none:시군구:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1364309221112950790]' derivation='User' name='[usr:Calculation_1364309221112950790:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1364309221113380871]' derivation='User' name='[usr:Calculation_1364309221113380871:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[건축면적]' role='measure' type='quantitative' />
+            <column datatype='real' name='[대지면적]' role='measure' type='quantitative' />
+            <column datatype='string' name='[시군구]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column datatype='real' name='[연면적]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13aqdt909rizve13i1y0j0t7ahwt].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221113380871:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221112950790:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.13aqdt909rizve13i1y0j0t7ahwt].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.13aqdt909rizve13i1y0j0t7ahwt].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13aqdt909rizve13i1y0j0t7ahwt].[Multiple Values]</rows>
+        <cols>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</cols>
+      </table>
+      <simple-id uuid='{6F32F199-AFC7-489B-9D33-E064B9A4CCB8}' />
+    </worksheet>
+    <worksheet name='막대차트만들기'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='서울시 표준주택가격(물리적)(표준주택가격(2021년~2022년))' name='federated.13aqdt909rizve13i1y0j0t7ahwt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13aqdt909rizve13i1y0j0t7ahwt'>
+            <column caption='총건물수' datatype='integer' name='[Calculation_1364309221119533064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([도로명주소])' />
+            </column>
+            <column caption='평균주택공시가격' datatype='real' name='[Calculation_1364309221119799305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([주택공시가격])' />
+            </column>
+            <column-instance column='[시군구]' derivation='None' name='[none:시군구:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1364309221119533064]' derivation='User' name='[usr:Calculation_1364309221119533064:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1364309221119799305]' derivation='User' name='[usr:Calculation_1364309221119799305:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[도로명주소]' role='dimension' type='nominal' />
+            <column datatype='string' name='[시군구]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column datatype='integer' name='[주택공시가격]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119799305:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119533064:qk]</rows>
+        <cols>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</cols>
+      </table>
+      <simple-id uuid='{307D9A0A-0CBD-4B6C-97AF-9B00050DFEAD}' />
+    </worksheet>
+    <worksheet name='필터기능_측정값'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='서울시 표준주택가격(물리적)(표준주택가격(2021년~2022년))' name='federated.13aqdt909rizve13i1y0j0t7ahwt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13aqdt909rizve13i1y0j0t7ahwt'>
+            <column caption='평균주택공시가격' datatype='real' name='[Calculation_1364309221119799305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([주택공시가격])' />
+            </column>
+            <column-instance column='[시군구]' derivation='None' name='[none:시군구:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1364309221119799305]' derivation='User' name='[usr:Calculation_1364309221119799305:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[시군구]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column datatype='integer' name='[주택공시가격]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]'>
+            <groupfilter count='3' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_1364309221119799305]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:시군구:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119799305:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</cols>
+      </table>
+      <simple-id uuid='{67835D35-FE96-44D1-9823-267BFB320CC5}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='21~22년도 주택현황보고'>
+      <style />
+      <size maxheight='900' maxwidth='1200' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98004' id='11' param='horz' type-v2='layout-flow' w='98666' x='667' y='998'>
+            <zone h='98004' id='5' param='vert' type-v2='layout-flow' w='85333' x='667' y='998'>
+              <zone h='6235' id='7' type-v2='title' w='85333' x='667' y='998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91769' id='6' type-v2='layout-basic' w='85333' x='667' y='7233'>
+                <zone h='65710' id='9' name='막대차트만들기' w='42666' x='667' y='33292'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='65710' id='13' name='라인차트 그래프' w='42667' x='43333' y='33292'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='26059' id='15' name='필터기능_측정값' w='85333' x='667' y='7233'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98004' id='10' is-fixed='true' param='vert' type-v2='layout-flow' w='13333' x='86000' y='998'>
+              <zone h='9103' id='12' name='막대차트만들기' pane-specification-id='0' param='[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119799305:qk]' type-v2='color' w='13333' x='86000' y='998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8978' id='14' name='라인차트 그래프' pane-specification-id='1' param='[federated.13aqdt909rizve13i1y0j0t7ahwt].[:Measure Names]' type-v2='color' w='13333' x='86000' y='10101'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98004' id='18' param='vert' type-v2='layout-flow' w='98666' x='667' y='998'>
+                <zone h='6235' id='7' type-v2='title' w='85333' x='667' y='998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='227' h='26059' id='15' is-fixed='true' name='필터기능_측정값' w='85333' x='667' y='7233'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65710' id='9' is-fixed='true' name='막대차트만들기' w='42666' x='667' y='33292'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9103' id='12' name='막대차트만들기' pane-specification-id='0' param='[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119799305:qk]' type-v2='color' w='13333' x='86000' y='998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65710' id='13' is-fixed='true' name='라인차트 그래프' w='42667' x='43333' y='33292'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8978' id='14' name='라인차트 그래프' pane-specification-id='1' param='[federated.13aqdt909rizve13i1y0j0t7ahwt].[:Measure Names]' type-v2='color' w='13333' x='86000' y='10101'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DD015392-4948-4E2A-9E72-4076A57A3BAD}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='필터기능_측정값'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[:Measure Names]</field>
+            <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A2BC8563-7E8C-4E5F-A8E4-BE0815E73AB9}' />
+    </window>
+    <window class='worksheet' name='막대차트만들기'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119799305:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119533064:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</field>
+                  <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119533064:qk]</field>
+                  <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119799305:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;서초구&quot;</value>
+                <value>1197</value>
+                <value>1633825396.8253968</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{71F33BBF-96A5-4365-8C8B-C03DB4D36ABE}' />
+    </window>
+    <window class='worksheet' name='라인차트 그래프'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.13aqdt909rizve13i1y0j0t7ahwt].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[:Measure Names]</field>
+            <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5493155C-2CE3-401A-BA67-02B34F8FC73C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='21~22년도 주택현황보고'>
+      <viewpoints>
+        <viewpoint name='라인차트 그래프'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='막대차트만들기'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119533064:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</field>
+                    <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119533064:qk]</field>
+                    <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119799305:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;노원구&quot;</value>
+                  <value>1068</value>
+                  <value>386729119.85018724</value>
+                </tuple>
+              </tuple-reference>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119533064:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[none:시군구:nk]</field>
+                    <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119533064:qk]</field>
+                    <field>[federated.13aqdt909rizve13i1y0j0t7ahwt].[usr:Calculation_1364309221119799305:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;금천구&quot;</value>
+                  <value>1175</value>
+                  <value>431434638.29787236</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='필터기능_측정값' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5FBF3323-F785-49FE-8EB6-9C62610E50AA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='21~22년도 주택현황보고' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='라인차트 그래프' width='192'>
+      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
+      mtemF0C5z8W1u+p5/vTouud97MIE1QHfqsfv92yr4dpdDXzv2fWJCp0dnOWTX/gpj7+6cS3p
+      chiaCjMxF+X2A9ve8fe7rm3jZO/Uqr5ec9MLQFEU/vWtnTx1cojsOh6+kTUt/vn5bh68e9+a
+      LMn48D37OTs0y7mh1R/YXSJtZPnmT87w90+e4zfffwNPnRja9EvObSH4zlPnefCefbic75xH
+      qizz0NVWw0vnxlYtv00vAID6YBntDZW81r1+u8aeOz1KR1MV2+oDa5K+y6nx0P3X87UfnVqT
+      rlD/xCJ//LVnsYTgjz9+J11ttfzXXznM3z91blOPP073z2DZNoc6Gy/7/++7tZMnXhtctS7d
+      lhAAwP2HO3n0aN+69GXTRpYfv9LHA3fvXdN8OluruWVfC99+4uyqRYVMy+aRF7r50qMn+dh7
+      r+Xj7z2I3+MCchXJJx+4hb/83jEm52Orkt9qkjEtvvvsBT7ynqUjbtvqA3jdTnrHFlclzy0j
+      gI7mIH6Pk7ODs2uajxCCp08Os297HQ3BsjXNC+CDd3UxPBPhzMDKrksIwcR8jD/75gtMLMT5
+      7K8d4cCOund133Y0VfHx9x7k8989tmrh5YVIiudPj664i3rswgS1AR+7WoJ57d536y4ef3Vg
+      VSqNLSMAyBWWR4/2Ya9hDD1tmDxxfJBfumPPuizHdjo0/t37DvGNn5wmpV9ZV8gWgmdOjfAX
+      f/8S77l+B7/1SzdS5nUtaX/DnibuObSdv/reMTLZlRXaMwOz/Ok3X+CZU0P89fdfvWIRZEyL
+      f3mxh18uYsx17c4GJuZihGLpK8rr7Wif+cxnPrOcLwhhMzM1jtNbjpEM09c/hK+iivDsOPMx
+      ncryMhQlVyOpq7wGvrrCy5MnhmhvrFxy9eVKefiFHppqyrllb8uapH85Kss8pA2Tbz9xlsmF
+      OKF4moxp49BUVEVBy7PmKBxP8zcPv8bUYpz/8uHD7N5WU7AAKYrCrpYgo7NRjp4f5/rdTajq
+      8sRuWjaPHu3lhy/38ckHb+H+2zoZno7wg5d6uX53I27n8hb9PfZyP16Pk7uvay/ov6appIws
+      g1Nh9m2vW1Y+70pruQKwjCQD/f34gk2oVpbaoIeBkRkSySxaJo67qgaXpq6JAFRVwe108PTJ
+      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
+    </thumbnail>
+    <thumbnail height='192' name='막대차트만들기' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='65' name='필터기능_측정값' width='192'>
+      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
+      AU2aTyoicmYAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
